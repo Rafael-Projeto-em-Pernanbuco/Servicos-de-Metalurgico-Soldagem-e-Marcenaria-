@@ -1,72 +1,78 @@
-
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Serviços de Metalurgia, Soldagem e Marcenaria</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serviços Metalúrgicos, Soldagem e Marcenaria</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5faff;
-      color: #001f3f;
       margin: 0;
-      padding: 0;
+      background-color: #ccc; /* cinza claro */
+      color: #000;
     }
     header {
-      background-color: #001f3f;
-      color: white;
+      background-color: #b30000; /* vermelho escuro */
+      color: orange;
       padding: 20px;
       text-align: center;
     }
     nav {
-      background-color: #0074D9;
-      padding: 10px;
+      background-color: #333; /* cinza escuro */
       text-align: center;
+      padding: 10px;
     }
     nav a {
-      color: white;
-      text-decoration: none;
+      color: orange;
       margin: 0 15px;
+      text-decoration: none;
       font-weight: bold;
     }
     section {
       padding: 20px;
     }
     .services {
-      background-color: #E0F7FA;
-      padding: 20px;
+      background-color: #eee;
       border-radius: 10px;
-      margin-top: 20px;
+      padding: 20px;
+      margin: 20px 0;
     }
     .services h2, .contact h2 {
-      color: #0074D9;
+      color: #b30000;
+    }
+    .services ul {
+      list-style-type: square;
+    }
+    .services li {
+      color: #000;
+      margin-bottom: 8px;
     }
     .map-container {
       margin-top: 20px;
     }
     footer {
-      background-color: #001f3f;
-      color: white;
+      background-color: #b30000;
+      color: orange;
       text-align: center;
       padding: 10px;
     }
     .chat-icons {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 10px;
       margin-top: 20px;
     }
     .chat-icons a {
       text-decoration: none;
       color: white;
-      background-color: #0074D9;
+      background-color: #444;
       padding: 10px 15px;
       border-radius: 5px;
-      transition: background-color 0.3s;
+      transition: 0.3s;
     }
     .chat-icons a:hover {
-      background-color: #005fa3;
+      background-color: #000;
     }
     form input[type="email"] {
       padding: 10px;
@@ -75,18 +81,22 @@
     }
     form input[type="submit"] {
       padding: 10px 20px;
-      background-color: #001f3f;
-      color: white;
+      background-color: #b30000;
+      color: orange;
       border: none;
       cursor: pointer;
+    }
+    #google_translate_element {
+      text-align: right;
+      margin: 10px 20px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Serviços de Metalurgia, Soldagem e Marcenaria</h1>
-    <p>Rua Maj. Bizarrias N°</p>
+    <h1>Serviços Metalúrgicos, Soldagem e Marcenaria</h1>
+    <p>Rua Maj. Bizarrias Nº 124, Bairro Popular - Nova Exu, PE</p>
   </header>
 
   <nav>
@@ -95,8 +105,8 @@
     <a href="#localizacao">Localização</a>
   </nav>
 
-  <!-- Google Translate -->
-  <div id="google_translate_element" style="float: right; margin: 10px;"></div>
+  <!-- Google Tradutor -->
+  <div id="google_translate_element"></div>
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'pt' }, 'google_translate_element');
@@ -105,27 +115,32 @@
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <section id="servicos" class="services">
-    <h2>Nossos Serviços</h2>
+    <h2>Lista de Serviços</h2>
     <ul>
       <li>Soldagem MIG/MAG - R$ 100,00</li>
       <li>Soldagem TIG - R$ 120,00</li>
-      <li>Conserto de Portões - R$ 150,00</li>
-      <li>Fabricação de Grades - R$ 200,00</li>
-      <li>Montagem de Móveis - R$ 80,00</li>
-      <li>Marcenaria Sob Medida - Sob consulta</li>
+      <li>Soldagem Elétrica - R$ 90,00</li>
+      <li>Soldagem Mix - R$ 130,00</li>
+      <li>Conserto de Portões e Grades - R$ 150,00</li>
+      <li>Fabricação de Estruturas Metálicas - Sob Consulta</li>
+      <li>Montagem de Móveis Planejados - R$ 80,00</li>
+      <li>Marcenaria sob medida - A partir de R$ 200,00</li>
     </ul>
   </section>
 
   <section id="contato" class="contact">
-    <h2>Contato</h2>
-    <p>Cadastre seu e-mail para receber orçamentos e promoções:</p>
+    <h2>Cadastre seu E-mail</h2>
+    <p>Receba orçamentos e promoções diretamente no seu e-mail:</p>
     <form action="#" method="post">
       <input type="email" name="email" placeholder="Digite seu e-mail" required>
       <input type="submit" value="Cadastrar">
     </form>
 
     <div class="chat-icons">
-      <a href="https://wa.me/5587981732937" target="_blank">WhatsApp</a>
+      <a href="https://wa.me/5587981732937" 
+target="_blank">Whatsapp</a>
+      <a
+href="https://wa.me/5587981784874" target="_blank">WhatsApp</a>
       <a href="https://www.instagram.com/SEUUSUARIO" target="_blank">Instagram</a>
       <a href="https://www.kwai.com/@SEUUSUARIO" target="_blank">Kwai</a>
       <a href="https://twitter.com/SEUUSUARIO" target="_blank">Twitter</a>
@@ -136,15 +151,15 @@
   </section>
 
   <section id="localizacao" class="map-container">
-    <h2>Onde Estamos</h2>
+    <h2>Localização</h2>
     <iframe
-      src="https://www.google.com/maps?q=Rua+Maj.+Bizarrias N°124 Bairro Popular Nova Exu-PE&output=embed"
-      width="100%" height="300" style="border:0;" allowfullscreen=""
-      loading="lazy"></iframe>
+      src="https://www.google.com/maps?q=Rua+Maj.+Bizarrias+124,+Nova+Exu,+PE&output=embed"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
   </section>
 
   <footer>
-    <p>&copy; 2025 - Todos os direitos reservados</p>
+    <p>&copy; 2025 - Todos os direitos reservados | Prestação de Serviços Metalúrgicos</p>
   </footer>
 
 </body>
